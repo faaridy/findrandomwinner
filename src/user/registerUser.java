@@ -3,18 +3,18 @@ package user;
 import java.util.Scanner;
 
 public class registerUser {
-    
-    public static void register(int n){
 
 
-        createUser[] users = new createUser[n];
+
+    public static createUser[] users = new createUser[createUser.instance().getNumberofmen()];
+    public static void register(){
 
         for(int i = 0;i < users.length;i++){
             createUser s = new createUser();
-            System.out.println(i+1 + ".Username:");
+            System.out.println(i+1 + ".User name:");
             Scanner sc1 = new Scanner(System.in);
             String name = sc1.nextLine();
-            System.out.println(i+1 + ".User Surname:");
+            System.out.println(i+1 + ".User surname:");
 
             String surname = sc1.nextLine();
             System.out.println(i+1 +".User instagram name:");
@@ -25,7 +25,7 @@ public class registerUser {
             users[i] = s;
 
         }
-        createUser.instance().setK(n);
+        createUser.instance().setRandomNum(createUser.instance().getNumberofmen());
 
     }
 

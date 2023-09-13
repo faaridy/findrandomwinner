@@ -29,10 +29,11 @@ public class Menu {
                      Scanner sc1 = new Scanner(System.in);
                      int num = sc1.nextInt();
                      if(num == 1){
-                         System.out.println("How many users register?");
-                         Scanner sc4 = new Scanner(System.in);
-                         int n =  sc4.nextInt();
-                         registerUser.register(n);
+                         System.out.println("How many user register?");
+                         Scanner sc9 = new Scanner(System.in);
+                            createUser.instance().setNumberofmen( sc9.nextInt());
+                         registerUser.register();
+
 
                      } else if(num == 2){
                          createRandomNum.RandomNum();
@@ -55,5 +56,5 @@ public class Menu {
          }
     }
 
-    public int n;
+
 }

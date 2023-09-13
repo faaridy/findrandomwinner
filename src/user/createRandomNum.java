@@ -10,10 +10,9 @@ public class createRandomNum {
         Integer randomNum = createUser.instance().getRandomNum();
         if(randomNum.equals(maxnum)){
             System.out.println("Congratulations you won!");
-            System.out.println(randomNum);
+            System.out.println("Winner : " + randomNum + ". " + registerUser.users[randomNum-1]);
         }else{
             System.out.println("YOU LOSE...");
-            System.out.println(randomNum);
         }
     }
 }

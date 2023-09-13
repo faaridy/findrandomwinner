@@ -1,12 +1,14 @@
 package user;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class createUser {
     private String name;
     private String surname;
     private String ig_account;
     private int randomNum;
+    private int numberofmen;
     private static createUser config = null;
 
 
@@ -63,7 +65,23 @@ public class createUser {
         return randomNum;
     }
 
-    public void setK(int k) {
+    public void setRandomNum(int randomNum) {
         this.randomNum = randomNum;
+    }
+
+    public int getNumberofmen() {
+        return numberofmen;
+    }
+
+    public void setNumberofmen(int numberofmen) {
+        this.numberofmen = numberofmen;
+    }
+
+    public static createUser getConfig() {
+        return config;
+    }
+
+    public static void setConfig(createUser config) {
+        createUser.config = config;
     }
 }

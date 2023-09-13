@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/findrandomwinner.iml" filepath="$PROJECT_DIR$/.idea/findrandomwinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindRandomWinner.iml" filepath="$PROJECT_DIR$/FindRandomWinner.iml" />
     </modules>
   </component>
 </project>
